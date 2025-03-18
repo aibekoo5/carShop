@@ -1,0 +1,930 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+/*Back header*/
+.back_header {
+  background-color: #212121;
+  color: #ccc;
+  padding: 10px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.header_left, .header_right {
+  display: flex;
+  align-items: center;
+}
+
+.header_left a, .header_right a span {
+  margin-left: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.locationimg, .loginimg{
+  width: 25px;
+  height: 25px;
+}
+
+
+.header_right a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.header_right a:hover {
+  color: #fff;
+}
+
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  margin: 0 10px;
+}
+
+/* Menu section */
+.back_menu {
+  width: 100%;
+  background-color: black;
+}
+
+.menu{
+  margin: 0 10px;
+  padding: 0 0;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.btn {
+  background-color: rgb(132, 132, 132);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+.tireimg{
+  width: 80%;
+  height: 75px;
+}
+
+
+.korzinaimg, .searchimg{
+  width: 40px;
+  height: 40px;
+}
+
+/*Navigator*/
+.menu_nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_left, .menu_right{
+  display: flex;
+  align-items: center;
+  
+}
+.menu_left h2{
+  color: #383838;
+  font-size: 5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.menu_nav nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu_nav nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  transition: transform 0.5s ease, font-size 0.5s ease;
+}
+
+.menu_nav nav ul li a:hover {
+  transform: scale(1.15); /* Increase size by 15% */
+  font-size: 3rem; /* Optionally increase font size */
+}
+
+.menu_right a{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.heartimg{
+  width: 5rem;
+}
+
+.input-group{
+  display: flex;
+}
+
+.form-control{
+  display: inline;
+  width: 50%;
+}
+
+/* Main content layout */
+.main-content {
+  display: flex;
+  padding: 20px;
+  background-size: cover;
+  background-image: url(/img/walpaper-white.jpg);
+  
+}
+
+/* Left column (70% width) */
+.left-column {
+  width: 70%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ccc;
+  margin-right: 20px;
+}
+
+
+.main{
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgba(195, 195, 195, 0.548);
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.left-main{
+  margin: 10px;
+  display: flex;
+}
+
+.right-main{
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.logokolik{
+  border-radius: 25px;
+  width: 200px;
+  height: 150px;
+  margin-right: 25px;
+}
+
+.carsimg{
+  width: 99%;
+  height: 99%;
+}
+
+/*opportunities*/
+.opportunities {
+  background-color:rgb(231, 231, 231);
+  border: 1px solid rgba(195, 195, 195, 0.548);
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  justify-content: space-between;
+}
+
+
+.title{
+  margin: 10px;
+  display: block;
+}
+
+.cards{
+  margin: 5px;
+  background-color: #e1e1e1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  margin: 15px;
+  width: 29%;
+  box-shadow: 0 4px 8px rgba(48, 48, 48, 0.233);
+}
+.card h2 {
+  margin: 10px;
+  font-size: 18px;
+}
+.card p {
+  margin: 10px;
+  color: #575757;
+  margin-bottom: 50px;
+}
+
+.obtn{
+  margin: 15px;
+  text-decoration: none;
+}
+
+.obtn:hover{
+  transition: color 0.5s linear;
+  color: rgb(253, 0, 0);
+}
+
+/*Our products*/
+.ourprod{
+  background-color: rgb(231, 231, 231);
+  border: 1px solid rgba(195, 195, 195, 0.548);
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ourprod h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.carousel {
+  background-color: #e1e1e1;
+  position: relative;
+  overflow: hidden;
+  margin: 15px auto;
+  max-width: 1200px;
+}
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.category {
+  min-width: 200px;
+  margin: 10px;
+  flex: 0 0 20%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(48, 48, 48, 0.233);
+}
+.category img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.category h2 {
+  font-size: 16px;
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+.category h2 a{
+  text-decoration: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(218, 218, 218, 0.786);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+.arrow-left {
+  left: 10px;
+}
+.arrow-right {
+  right: 10px;
+}
+
+.gif{
+  border-radius: 8px;
+  width: 100%;
+  
+}
+
+/*banner*/
+.banner {
+  background-color: #40E0D0;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.banner-text {
+  width: 50%;
+}
+.banner-text h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.more-button {
+  background-color: #FF1493;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.camry-text {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 72px;
+  font-weight: bold;
+}
+.camry-text span:first-child {
+  color: white;
+}
+.camry-text span:last-child {
+  color: #FF1493;
+}
+.image-container {
+  width: 50%;
+  text-align: right;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: white;
+}
+
+
+/*recom cars*/
+.recom-cars{
+  background-color: rgb(231, 231, 231);
+  margin-top: 15px;
+  border: 1px solid rgba(195, 195, 195, 0.548);
+  border-radius: 8px;
+  width: 100%;
+  display: block;
+}
+.r-title{
+  margin-left: 30px;
+}
+
+.r-cards{
+  
+  flex-wrap: wrap;
+  display: flex;
+
+  align-items: center;
+  margin: 10px;
+  justify-content: space-evenly;
+}
+
+.recom-card{
+  padding: 1px;
+  display: flex;
+  width: 99%;
+  margin: 15px;
+  border-radius: 4px;
+  height: 21rem;
+  box-shadow: 0 4px 8px rgba(48, 48, 48, 0.233);
+}
+
+.card-header {
+  width: 30%;
+  height: 100%;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.card-body {
+  margin: 1%;
+  text-align: left;
+  margin-top: 0.2rem;
+  height: 20rem;
+  width: 60%;
+}
+
+.card-title {
+  margin: 5px;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.card-text {
+  text-align: left;
+  color: #6c757d;
+  height: 15rem;
+}
+
+
+.right-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  padding: 0 5px;
+
+}
+
+.price{
+  margin: 15px;
+  text-align: right;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.card-buttons{
+  align-self: center;
+
+  justify-content: space-evenly;
+  padding: 2px;
+  display: flex;
+  width: 90%;
+  height: 30%;
+}
+
+/*Add to cart*/
+.add-to-cart-button {
+  background: #e6a247;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 3px 13px -2px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: space-evenly;
+  width: 65%;
+  overflow: hidden;
+  outline: none;
+  padding: 0.1rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+}
+.add-to-cart-button:active {
+  box-shadow: 0 0 0 0.2rem rgba(252, 186, 3, 0.45);
+  transform: translateY(4px);
+}
+.add-to-cart-button:hover {
+  cursor: pointer;
+}
+.add-to-cart-button:hover, .add-to-cart-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(252, 186, 3, 0.45);
+  transform: translateY(-1px);
+}
+.add-to-cart-button.added {
+  background: #2fbf30;
+  box-shadow: 0 0 0 0.2rem rgba(11, 252, 3, 0.45);
+}
+.add-to-cart-button.added .add-to-cart {
+  display: none;
+}
+.add-to-cart-button.added .added-to-cart {
+  display: block;
+}
+
+.add-to-cart-button.added .tick {
+  animation: grow 0.6s forwards;
+  -webkit-animation: grow 0.6s forwards;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.add-to-cart-button .add-to-cart,
+.add-to-cart-button .added-to-cart {
+  width: 60%;
+  height: auto;
+  align-self: center;
+}
+
+.added-to-cart {
+  display: none;
+  position: relative;
+}
+
+.cart-icon {
+  left: 15px;
+  align-self: center;
+  top: 8px;
+  width: 30%;
+}
+
+.tick {
+  background: #146230;
+  border-radius: 50%;
+  position: absolute;
+  left: 28px;
+  transform: scale(0);
+  top: 5px;
+  z-index: 2;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes drop {
+  0% {
+    -webkit-transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(1px);
+  }
+}
+@keyframes drop {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+
+.like-div{
+
+  width: 30%;
+  height: 100%;
+}
+
+.like-button {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.like-icon {
+  width: 90%;
+  height: 90%;
+  fill: none; /* Нет заливки по умолчанию */
+  stroke: #555; /* Серый контур по умолчанию */
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.active {
+  fill: red; /* Заливка красным при активации */
+  stroke: red; /* Контур тоже красный */
+}
+
+
+
+
+
+/* Right column (30% width) */
+.right-column {
+  width: 30%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ccc;
+}
+
+.popular-models{
+  margin-bottom: 5rem;
+  background-color: rgb(231, 231, 231);
+  border-radius: 8px;
+}
+
+.popModels {
+  margin: 15px;
+  font-size: 30px;
+  color: #000000;
+}
+
+.cars{
+  text-align: center;
+}
+
+.car{
+  margin-top: 15px;
+  display: inline-block;
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 8px;
+  width: 90%;
+  height: 36rem;
+  text-align: center;
+}
+
+.carimg{
+  margin-top: 5px;
+  border-radius: 25px;
+  width: 99%;
+  height: 22rem;
+  margin-bottom: 2rem;
+}
+
+
+
+.pPrice{
+  font-size: 20px;
+  color: #666;
+}
+
+.model:hover  {
+  text-decoration: none;
+  transition: color 0.5s linear;
+  color: rgb(57, 6, 241);
+}
+.model{
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.our-partner{
+  background-color: rgb(231, 231, 231);
+  border-radius: 8px;
+}
+.p-title{
+  margin: 15px;
+  font-size: 30px;
+}
+
+.imgs{
+  display: inline;
+}
+
+.partner-card{
+  border-radius: 8px;
+  border: 1px solid rgba(187, 185, 185, 0.548);
+  margin-bottom: 1%;
+  width: 49%;
+  height: 17rem;
+}
+
+/*form*/
+.back-form {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Contact form*/
+.contact-form{
+  margin: 30px;
+  border-radius: 5px;
+  background-color: #8e8e8e93;
+  padding: 20px;
+  width: 40%;
+}
+
+.c-title{
+  font-size: 30px;
+  margin: 15px;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form label{
+  color: rgb(87, 87, 87)
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.links{
+  font-size: 8rem;
+}
+
+.fa-instagram {
+  text-align: center;
+  border-radius: 12px;
+  width: 8.1rem;
+  height: 8.1rem;
+  background: #b820a3;
+  color: white;
+}
+
+.fa-youtube {
+  text-align: center;
+  border-radius: 12px;
+  width: 8.1rem;
+  height: 8.1rem;
+  background: #bb0000;
+  color: white;
+}
+
+/* Footer section */
+.footer {
+  background-color: #777777;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  /* Основной контент */
+  .main-content {
+    flex-direction: column; /* Столбцы вертикально */
+    padding: 10px;
+  }
+
+  /* Увеличение ширины блоков на всю ширину экрана */
+  .left-column, .right-column {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Уменьшение размера изображений */
+  .carsimg, .logokolik, .carimg {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Адаптивные карточки */
+  .card {
+    width: 100%; /* Полная ширина карточек на мобильных */
+    margin: 10px 0;
+  }
+
+  /* Стили для текста */
+  h2, h1, .card-title {
+    font-size: 1.5rem; /* Уменьшить шрифт на мобильных */
+  }
+
+  .menu_nav nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  /* Адаптивные кнопки */
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* Гамбургер меню */
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 15px;
+  }
+
+  .carousel, .banner {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+
+
+  .recom-card{
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+    height: 40rem;
+  }
+
+  .card-header{
+    height: 50%;
+    width: 100%;
+  }
+
+  .card-body{
+    height: 30%; 
+    margin: 5px;
+    width: 95%;
+  }
+
+  .right-card{
+    align-content: center;
+    width: 95%;
+    display: flex;
+    height: 15%;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  .price{
+    width: 50%;
+    margin-left: 15px;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .card-buttons{
+    width: 50%;
+    height: 100%;
+    align-items: right;
+
+  }
+
+  .add-to-cart-button{
+    width: 50%;
+  }
+
+  .like-div{
+    width: 50%;
+    height: 100%;
+  }
+
+  .add-to-cart-button .add-to-cart,
+  .add-to-cart-button .added-to-cart {
+    display: none !important; 
+  }
+}
+
+
