@@ -1,3 +1,3 @@
-img/page.png
+[page.png]
 # carShop
 html-css-js
